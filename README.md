@@ -3,7 +3,7 @@
 
 ***
 
-*用node.js写的简单的爬虫工具，来获取[长春理工大学官网](http://www.cust.edu.cn)网站里的理工，保存在本地文件中。*
+*用node.js写的简单的爬虫工具，来获取[长春理工大学官网](http://www.cust.edu.cn)里的理工新闻，保存在本地文件中。*
 
 **需要的依赖**
 
@@ -19,7 +19,6 @@
 **核心代码**
 
 `getStart : function(url){`
- 
         cust.download(url, function(d){
             if(d){
                 var $ = cheerio.load(d);
