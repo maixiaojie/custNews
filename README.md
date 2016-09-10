@@ -19,6 +19,7 @@
 **核心代码**
 
 `getStart : function(url){`
+
         cust.download(url, function(d){
             if(d){
                 var $ = cheerio.load(d);
